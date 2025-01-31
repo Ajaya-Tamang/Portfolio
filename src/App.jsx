@@ -1,16 +1,16 @@
 import { useState, useEffect } from 'react';
-import { AnimatePresence } from '/srcframer-motion';
-import { ThemeProvider } from './src/context/ThemeContext';
-import Navbar from './src/components/Navbar/Navbar';
-import Hero from './src/components/Hero/Hero';
-import Hero from './src/components/Hero/Hero';
-import Projects from './src/components/Projects/Projects';
-import Skills from './src/components/Skills/Skills';
-import About from './src/components/About/About';
-import Contact from './src/components/Contact/Contact';
-import CustomCursor from './src/components/CustomCursor/CustomCursor';
-import LoadingScreen from './src/components/LoadingScreen/LoadingScreen';
-import './src/styles/globals.css';
+import { AnimatePresence } from '/framer-motion';
+import { ThemeProvider } from './context/ThemeContext';
+import Navbar from './components/Navbar/Navbar';
+import Hero from './components/Hero/Hero';
+import Hero from './components/Hero/Hero';
+import Projects from './components/Projects/Projects';
+import Skills from './components/Skills/Skills';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
+import CustomCursor from './components/CustomCursor/CustomCursor';
+import LoadingScreen from './components/LoadingScreen/LoadingScreen';
+import './styles/globals.css';
 
 function App() {
   const [loading, setLoading] = useState(true);
