@@ -10,3 +10,35 @@ import Contact from './components/Contact/Contact';
 import CustomCursor from './components/CustomCursor/CustomCursor';
 import LoadingScreen from './components/LoadingScreen/LoadingScreen';
 import './styles/globals.css';
+
+function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 2000);
+  }, []);
+
+  return (
+    <ThemeProvider>
+      <CustomCursor />
+      <AnimatePresence mode="wait">
+        {loading ? (
+          <LoadingScreen />
+        ) : (
+          <div className="bg-background text-white">
+            <Navbar />
+            <main className="overflow-hidden">
+              <Hero />
+              <About />
+              <Skills />
+              <Projects />
+              <Contact />
+            </main>
+          </div>
+        )}
+      </AnimatePresence>
+    </ThemeProvider>
+  );
+}
+
+export default App;
