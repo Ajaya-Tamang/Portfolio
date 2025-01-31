@@ -1,1 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap');
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #64FFDA;
+  --secondary: #0A192F;
+  --background: #0F172A;
+  --text: #E2E8F0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-background font-sans text-text;
+  margin: 0;
+  padding: 0;
+}
+
+.glass {
+  @apply backdrop-blur-md bg-white/10;
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-primary text-secondary font-semibold rounded-lg 
+    hover:bg-primary/80 transition-all duration-300;
+  }
+  
+  .section-padding {
+    @apply py-20 px-4 md:px-8 lg:px-16;
+  }
+}
