@@ -4,6 +4,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 :root {
   --primary: #64FFDA;
   --secondary: #0A192F;
@@ -20,6 +22,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 
 .glass {
   @apply backdrop-blur-md bg-white/10;
