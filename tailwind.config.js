@@ -8,6 +8,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        'text': '#E2E8F0',        // Added text color
         primary: '#64FFDA',
         secondary: '#0A192F',
         accent: '#F97316',
